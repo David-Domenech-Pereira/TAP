@@ -27,12 +27,12 @@ public class Test3 {
 		System.out.println("-No ordering---------------");
 		print(c);
 
-		NameComparator t1 = new NameComparator();
-		Collections.sort(c, t1);
+		NameComparator t1 = new NameComparator(); //el comparator, no es lo mismo que el Compare To
+		Collections.sort(c, t1); //a c em queda la llista ordenada
 		System.out.println("-Ordered by name--------");
 		print(c);
 
-		AgeComparator t2 = new AgeComparator();
+		AgeComparator t2 = new AgeComparator(); //me indica como 
 		Collections.sort(c, t2);
 		System.out.println("-Ordered by age--------");
 		print(c);

@@ -14,7 +14,7 @@
 
 #### Proposed exercises
 
-1. Bank Problem
+1. Bank Problem 
 
 This is the problem of modeling a bank. The bank has a list of accounts and
 a list of customers. Customers have their ID, name, address and

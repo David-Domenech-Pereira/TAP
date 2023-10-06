@@ -21,7 +21,7 @@ public class Test2 {
 
 		print(c);
 
-		int loc = Collections.binarySearch(c, "dos");
+		int loc = Collections.binarySearch(c, "dos"); //nos hace una búsqued óptima
 		System.out.println("Posicion de " + "dos" + " = " + loc);
 
 	}
