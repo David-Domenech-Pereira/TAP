@@ -1,10 +1,11 @@
 package TAP1.implementation.models;
 
 public class AccountCA extends Account {
-    private double interestRate = 0.1;
+    
 
-    public AccountCA(int id) {
-        super(id);
+    public AccountCA(int id, Customer customer) {
+        super(id, customer);
+        interestRate = 0.1;
 
     }
 

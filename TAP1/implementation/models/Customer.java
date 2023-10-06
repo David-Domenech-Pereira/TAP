@@ -1,5 +1,7 @@
 package TAP1.implementation.models;
 
+import java.util.List;
+
 public class Customer {
     //Has the following atrributes: ID, name, address and phone number
 
@@ -7,6 +9,8 @@ public class Customer {
     private String name;
     private String address;
     private String phoneNumber;
+    //list of accounts
+    private List<Account> accounts;
 
     public Customer(int id, String name, String address, String phoneNumber) {
         this.id = id;
@@ -36,7 +40,14 @@ public class Customer {
     public String toString() {
         return "Customer{" + "id=" + id + ", name=" + name + ", address=" + address + ", phoneNumber=" + phoneNumber + '}';
     }
-
-
+    public void addAccount(Account account){
+        accounts.add(account);
+    }
+    public void removeAccount(Account account){
+        accounts.remove(account);
+    }
+    public List<Account> getAccounts(){
+        return accounts;
+    }
     
 }
